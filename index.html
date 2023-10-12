@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <nav>
-            <div class="logo">Portfolio<b>.</b></div>
+            <div class="logo">Abhinav<b>.</b></div>
             <ul class="navItems">
                 <li><a href="#">home</a></li>
                 <li><a href="#about">about</a></li>
@@ -54,9 +54,9 @@
     <div class="container1">
         <div class="row">
             <div class="about-col-1">
-            <img src="./assets/psp.jpg" alt="" id="psp">
+            <img src="./assets/psp.jpg" alt="" id="psp" class="reveal">
             </div>
-            <div class="about-col-2">
+            <div class="about-col-2 reveal">
                 <h1 class="sub-title">About Me</h1>
                 <p id="aboutp">Greetings! I'm Abhinav Rajesh, a soon to be Full-Stack Developer with a penchant to innovation and a dedication to exellence. I'm currently a 1st Year Kalvium Student at Lovely Professional Unviersity, Punjab and am Aiming to be a Full-Stack Developer by the end of my 1st Year. Due to the opportunity being provided by Kalvium, im striving towards getting an Internship in my 2nd Year at Lovely Professional University.</p>
 
@@ -83,7 +83,7 @@
                 <div class="tab-contents" id="skills">
                     <ul>
                         <li><span>Drawing</span><br>I like sketching and paiting characters from shows I enjoy.</li>
-                        <li><span>Gaming</span><br>I'm an FPS player in my free time.</li>
+                        <li><span>Eating</span><br>I love trying different kinds of food and exploring cullinary delights from all over the world.</li>
                         <li><span>Digital Art</span><br>I do Digital Art to a certain extent. I'm not good enough to add it as one of my skills.</li>
                     </ul>
                 </div>
@@ -113,7 +113,7 @@
 <div class="skillsets" id="skillsets1">
     <div class="skills-title"><h1> My Skills</h1></div><br>
     <div class="gt-4">
-      <div class="col-lg">
+      <div class="col-lg reveal">
         <div class="2-gt">
           <div class="g-0">
             <div class="col-md-4 col-lg-12">
@@ -129,7 +129,7 @@
         </div>
       </div>
 
-      <div class="col-lg">
+      <div class="col-lg reveal">
         <div class="card">
           <div class="g-0">
             <div class="col-md-4 col-lg-12">
@@ -147,6 +147,28 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for(var i = 0; i < reveals.length; i++){
+
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+            else{
+                reveals[i].classList.remove('active');
+            }
+        }
+    }
+</script>
 
 <div id="contact" style="width: 100%;">
     <div class="contact-container">

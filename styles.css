@@ -393,3 +393,22 @@ form input, form textarea{
 }
 
 /* ------------------------- */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+
+}
+/*------------------------------------------------*/
+.g-0:hover{
+    margin: 10px;
+    background-color: rgb(16, 38, 117);
+}
+.btnt:hover{
+    background-color: #1a78a0;
+}
