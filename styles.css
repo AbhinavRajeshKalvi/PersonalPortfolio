@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;600;900&family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+ /*  overflow: hidden;*/
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f5f8;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    z-index: 111;
+    line-height: 80px;
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+b{
+    font-size: 70px;
+    color: #00043E;
+}
+.navItems{
+    display: flex;
+    padding-right: 130px;
+}
+.navItems li{
+    list-style: none;
+    margin: 0 15px;
+}
+.navItems li a{
+    font-size: 25px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+.navItems li:hover a,
+.links a:hover{
+    color: #00043E;
+}
+.links a{
+    font-size: 30px;
+    color: #3d535f;
+    margin: 25px 10px;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(45deg,#00043E,#56C0EE);
+    animation: object1 6s linear infinite;
+}
+.wrapper::after{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg,#00043E, #56C0EE);
+    animation: object2 6s linear infinite;  
+}
+@keyframes object1{
+    50%{
+        left: -13%;
+        top: 41%;
+
+    }
+}
+@keyframes object2{
+    50%{
+        left: 35%;
+        top: 10%;
+
+    }
+}
+.cols{
+    width: 50%;
+    
+}
+.cols0{
+    z-index: 5;
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #a8a8a8;
+    margin-bottom: 20%;
+    
+}
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #00043E;
+    
+}
+#homeh1{
+    display: block;
+    font-size: 7em;
+    font-weight: 900;
+    color: #a8a8a8;
+    position: absolute;
+    top: 40%;
+
+}
+.multiText{
+    color: #00043E;
+    text-transform: capitalize;
+}
+#homep{
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #3d535f;
+    margin-bottom: 200px;
+    padding-bottom: 20%;
+}
+.imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.imgbox img{
+    position: relative;
+    height: 100%;
+    width: calc(130% - 80px);
+    top: -100px;
+    right: -50px;
+    animation: animateUser 4s linear infinite;    
+}
+@keyframes animateUser{
+    50%{
+        right: -20px;
+        top: -90px;
+    }
+}
+.imgbox #splash{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    width: 160%;
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    50%{
+        top: 49%;
+        left: 71%;
+        width: 155%;
+    }
+}
+
+#about{
+    padding: 80px 0;
+    color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+    padding-left: 50px;
+
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+
+}
+.about-col-2{
+    flex-basis: 60%;
+
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #00043E;
+}
+.tab-title{
+    display: flex;
+    margin: 40px 0 20px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #00043E;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #00043E;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+#about{
+    background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-52379.jpg");
+    position: absolute;
+    top: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#aboutp{
+    color: white;
+}
+.skillsets{
+    margin: 50px;
+    position: relative;
+    top: 190%;
+    margin-left: 100px;
+    margin-bottom: 20%;
+}
+.gt-4{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.pyimg{
+    height: 350px;
+    width: 600px;
+}
+.htmlimg{
+    height: 350px;
+    width: 600px;
+}
+.card-body{
+    width: 500px;
+    
+}
+.g-0{
+    border: 2px solid grey;
+    border-radius: 10px;
+    height: 550px;
+    background-color: #05A4DE;
+    padding: 20px;
+}
+.card-title{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card-body p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+    color: white;
+}
+.skills-title{
+    font-weight: 900;
+    font-size: 35px;
+    text-align: center;
+    border-bottom: 2px solid #00043E;
+    padding-bottom: 15px;
+    color: #00043E;
+}
+.card-body h5{
+    color: #00043E;
+}
+#contact{
+    background-color: #00043E;
+    height: 450px;
+    position: absolute;
+    top: 290%;
+    color: white;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+    color: white;
+}
+.contact-left p img{
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: rgb(73, 249, 255);
+    transform: translateY(-5px);
+
+}
+.btnt{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    background-color: #05A4DE;
+}
+.contact-right form{
+    width: 100%;
+
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 15px 0;
+    color: black;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.contact-row{
+    display: flex;
+}
+.contact-subtitle{
+    font-size: 50px;
+    color: #05A4DE;
+}
+.social-icons img{
+    filter: invert(1);
+}
+#msg{
+    color: #05A4DE;   
+}
+
+/* ------------------------- */

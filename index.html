@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">Portfolio<b>.</b></div>
+            <ul class="navItems">
+                <li><a href="#">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#skillsets1">skills</a></li>
+            </ul>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/abhinav-rajesh-a42681289/"><img src="./assets/linkedin-in.svg" alt="" height="20px" width="20px"></a>
+                <a href="https://instagram.com/_crossxd?igshid=NGVhN2U2NjQ0Yg=="><img src="./assets/instagram.svg" alt="" height="20px" width="20px"></a>
+                <a href="https://twitter.com/Abhinav30314382"><img src="./assets/twitter.svg" alt="" height="20px" width="20px"></a>
+            </div>
+        </nav>
+
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Hello</span>
+                <h1 id="homeh1">I'm <span class="multiText"></span></h1><br><br>
+                <p id="homep">An Enthusiastic Full-Stack Developer in the Making currently craving my future into a masterpiece.<br><br>I value <strong>Clarity</strong>, <strong>Empathy</strong>, and <strong>Hard Work</strong> above all else. These ideals guide my approach to problem solving and life in general</p>
+            </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <img src="./assets/pngtree-dark-blue-abstract-brush-stroke-isolated-png-image_2141509-removebg-preview.png" id="splash">
+                    <img src="./assets/PXL_20231011_123802481.MP-removebg-preview.png" alt="" id="homeimg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed(".multiText",{
+            strings : ["coder","designer","Developer"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+
+        })
+    </script>
+    
+<div id="about">
+    <div class="container1">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="./assets/psp.jpg" alt="" id="psp">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p id="aboutp">Greetings! I'm Abhinav Rajesh, a soon to be Full-Stack Developer with a penchant to innovation and a dedication to exellence. I'm currently a 1st Year Kalvium Student at Lovely Professional Unviersity, Punjab and am Aiming to be a Full-Stack Developer by the end of my 1st Year. Due to the opportunity being provided by Kalvium, im striving towards getting an Internship in my 2nd Year at Lovely Professional University.</p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('skills')">Hobbies</p>
+                    
+                </div>
+                
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>2023 - Present</span><br>B.Tech CSE Kalvium at Lovely Professional University</li>
+                        <li><span>2020 - 2022</span><br>Class 11 & 12 at Chavara Public School, Pala, Kerala</li>
+                        <li><span>2013 - 2020</span><br>Class 4 - Class 10 at Our Own English High School (Boy's Branch), Sharjah, UAE</li>                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Present</span><br>As of Now I possess No experience in the field of Software Engineering.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Drawing</span><br>I like sketching and paiting characters from shows I enjoy.</li>
+                        <li><span>Gaming</span><br>I'm an FPS player in my free time.</li>
+                        <li><span>Digital Art</span><br>I do Digital Art to a certain extent. I'm not good enough to add it as one of my skills.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="skillsets" id="skillsets1">
+    <div class="skills-title"><h1> My Skills</h1></div><br>
+    <div class="gt-4">
+      <div class="col-lg">
+        <div class="2-gt">
+          <div class="g-0">
+            <div class="col-md-4 col-lg-12">
+              <img src="./assets/python.png" class="pyimg" alt="python logo">
+            </div>
+            <div class="col-md-8 col-lg-12">
+              <div class="card-body">
+                <h5 class="card-title">Python</h5><br>
+                <p class="skills-text">I wanted to make my own discord bot so I started learning python. Ended up creating a lot of projects and falling in love with programming. I have also chosen Python as the language to focus on In my first Year of College. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg">
+        <div class="card">
+          <div class="g-0">
+            <div class="col-md-4 col-lg-12">
+              <img src="./assets/html-css.png" class="htmlimg" alt="html and css logo">
+            </div>
+            <div class="col-md-8 col-lg-12">
+              <div class="card-body">
+                <h5 class="card-title">HTML/CSS</h5><br>
+                <p class="skills-text">Currently, I have started HTML-CSS and JS 2 months ago at my college under the guidance of Kalvium Mentors. I have made 20+ projects as of now.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact" style="width: 100%;">
+    <div class="contact-container">
+        <div class="contact-row">
+            <div class="contact-left">
+                <h1 class="contact-subtitle">Contact Me</h1>
+                <p><img src="./assets/paper-plane.png" alt="" height="30px" width="30px">abhinav.rajesh@kalvium.community</p>
+                <p><img src="./assets/call.png" alt="" height="30px" width="30px">9895609828</p>
+                <br><br>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/abhinav-rajesh-a42681289/"><img src="./assets/linkedin white.svg" alt="" height="40px" width="40px"></a>
+                    <a href="https://instagram.com/_crossxd?igshid=NGVhN2U2NjQ0Yg=="><img src="./assets/instagram white.svg" alt="" height="40px" width="40px"></a>
+                    <a href="https://twitter.com/Abhinav30314382"><img src="./assets/twitter white.svg" alt="" height="40px" width="40px"></a>
+                    <a href="https://discord.gg/NvneTyXd"><img src="./assets/discord.svg" alt="" height="40px" width="40px"></a>
+
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="example@gmail.com" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btnt">Submit</button>
+                </form>
+                <spana id="msg"></span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyDeAxmljNZPWtEezRX5KTOO8TEXNP-snVbuWNCzqjZsA17J6lr32rCmzMyAMQLvmZ3NQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
